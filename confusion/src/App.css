@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+  background: url(https://png.pngtree.com/background/20210711/original/pngtree-football-shading-poster-background-vector-material-picture-image_1128182.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: start;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li:hover {
+  background-color: #e04010;
+}
+.nav a {
+  display: flex;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.nav a.active {
+  width: auto;
+  font-weight: bold;
+  background-color: #79850d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: auto auto auto;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
+
+.column {
+  display: flex;
+}
+
+.card {
+  /* display: block; */
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card img{
+  max-width: 100%;
+}
+
+.card button {
+  display: flexbox;
+  background-color: black;
+  color: white;
+  width: 100%;
+  
+}
+
+.footer{
+  text-align: center;
+  background-color: yellowgreen ;
+}
+
+
