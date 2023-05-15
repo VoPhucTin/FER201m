@@ -1,7 +1,7 @@
 import React from 'react'
 import { PlayerList } from '../share/ListOfPlayers';
 
-const Players = () => {
+export default function Players() {
   return (
     <div className='container'>
       {PlayerList.map((player)=>(
@@ -20,4 +20,3 @@ const Players = () => {
   )
 }
 
-export default Players;

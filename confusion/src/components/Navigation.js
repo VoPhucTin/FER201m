@@ -1,6 +1,6 @@
 import React from 'react'
 
- const Navigation = () => {
+export default function Navigatio (){
   return (
     <div>
         <nav className='nav'>
@@ -15,4 +15,4 @@ import React from 'react'
   )
 }
 
-export default Navigation;
+
