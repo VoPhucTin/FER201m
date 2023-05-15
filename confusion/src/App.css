@@ -62,17 +62,79 @@
   max-width: 100%;
 }
 
-.card button {
-  display: flexbox;
-  background-color: black;
-  color: white;
-  width: 100%;
-  
-}
+
 
 .footer{
   text-align: center;
   background-color: yellowgreen ;
 }
 
+a#openPopUp {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  width: max-content;
+}
 
+a#openPopUp:hover {
+  background-color: #06D85F;
+}
+
+a#openPopUp span {
+  pointer-events: none;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  transition: opacity 500ms;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup{
+  margin: 70px auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup img{ width: 100%;}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {color: #06D85F;}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
