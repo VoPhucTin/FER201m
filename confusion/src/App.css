@@ -25,10 +25,10 @@
 }
 .nav a {
   display: flex;
-  color: white;
+  color: darkgreen;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .nav a.active {
