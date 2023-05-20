@@ -1,7 +1,7 @@
 .App {
-  background: url(https://png.pngtree.com/thumb_back/fh260/background/20210910/pngtree-green-lawn-football-field-in-the-daytime-photography-pictures-with-pictures-image_848346.jpg);
+  /* background: url(https://png.pngtree.com/thumb_back/fh260/background/20210910/pngtree-green-lawn-football-field-in-the-daytime-photography-pictures-with-pictures-image_848346.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 .nav {
   display: flex;
@@ -60,6 +60,7 @@
 
 .card img{
   max-width: 100%;
+  /* object-fit: cover; */
 }
 
 
@@ -137,4 +138,36 @@ a#openPopUp span {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+.badge{
+  background-color: #e04010;
+  color: white; 
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.product-tumb{
+  width: 80%;
+  float: left;
+}
+
+.product-price{
+  color: #c47c10;
+}
+
+.product-card {
+  /* display: block; */
+  flex: 1;
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.product-details{
+  padding-top: 5rem;
 }

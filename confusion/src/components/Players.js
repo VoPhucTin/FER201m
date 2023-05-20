@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
-import { PlayerList } from '../share/ListOfPlayers';
-
+import { data } from '../share/ListOfPlayers';
+import { Link } from 'react-router-dom';
 const PlayersPresentation = () => {
   const [player, setPlayer] = useState([])
   return (
     <div className='container'>
-      {PlayerList.map((player)=>(
+      {data.map((player)=>(
         <div className='column'>
         <div className='card'>
             <img src={player.img}/>
             <h3>{player.name}</h3>
             <h4 className='title'>{player.club}</h4>
-            
-              <a onClick={()=>{setPlayer(player)}} href='#popup1' id='openPopUp'> <span>Detail</span></a>
-               
+            <Link to={`Detail/${player.id}`}>
+              {/* <a onClick={()=>{setPlayer(player)}} href='#popup1' id='openPopUp'> <span>Detail</span></a> */}
+              <a><span>Detail</span></a>
+              </Link> 
 
         </div>
         </div>
