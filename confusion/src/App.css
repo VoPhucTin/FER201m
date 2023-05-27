@@ -1,7 +1,7 @@
 .App {
-  /* background: url(https://png.pngtree.com/thumb_back/fh260/background/20210910/pngtree-green-lawn-football-field-in-the-daytime-photography-pictures-with-pictures-image_848346.jpg);
+  background: url(https://cdn.tgdd.vn//GameApp/-1//Powerpoint-6-800x450.jpg);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 .nav {
   display: flex;
@@ -37,7 +37,7 @@
   background-color: #79850d;
 }
 
-.container {
+/* .container {
   display: grid;
   justify-content: flex-start;
   grid-template-columns: auto auto auto;
@@ -47,32 +47,53 @@
 
 .column {
   display: flex;
+} */
+
+.container {
+  /* padding: 0px 100px 10px 100px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: stretch; */
 }
 
+.column {
+  padding: 0px 10px 0px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  
+}
 .card {
-  /* display: block; */
-  flex: 1;
   text-align: center;
-  margin: 10px;
-  max-width: 100%;
-  height: auto;
+  margin: 30px;
+  max-width: 300px;
+  height: 100%;
+  margin-bottom: 50px;
+  border-radius: 10px;
 }
 
 .card img{
-  max-width: 100%;
-  /* object-fit: cover; */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
+.card h3{ 
+  font-size: 1.64rem;
+}
 
+.card h4{
+  font-size: medium;
+}
 
 .footer{
   text-align: center;
   background-color: yellowgreen ;
 }
 
-a#openPopUp {
+.card a {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 4px 8px;
   background-color: #007bff;
   color: #fff;
   text-decoration: none;
@@ -81,11 +102,15 @@ a#openPopUp {
   width: max-content;
 }
 
-a#openPopUp:hover {
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px
+}
+
+.card a:hover {
   background-color: #06D85F;
 }
 
-a#openPopUp span {
+.card a span {
   pointer-events: none;
 }
 
@@ -152,8 +177,15 @@ a#openPopUp span {
 }
 
 .product-tumb{
-  width: 80%;
-  float: left;
+ justify-self: center;
+ 
+}
+
+.product-tumb img{
+  width: 500px;
+  object-fit: cover;
+  display: block;
+  
 }
 
 .product-price{
@@ -162,12 +194,16 @@ a#openPopUp span {
 
 .product-card {
   /* display: block; */
-  flex: 1;
   margin: 10px;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  background-color: rgb(211, 205, 205);
 }
 
 .product-details{
   padding-top: 5rem;
+  background-color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
 }
