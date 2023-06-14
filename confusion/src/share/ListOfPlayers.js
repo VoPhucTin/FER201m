@@ -1,7 +1,7 @@
 export const data= [
     {id: '1', name: 'Cristiano Ronaldo', cost: 20000000, club: 'Manchester United', img:'assets/images/cr.jpg', 
       info:'Cristiano Ronaldo dos Santos Aveiro GOIH ComM born 5 February 1985 is a Portuguese professional footballer who plays as a forward for Premier League club Manchester United and captains the Portugal national team.'},
-      {id: 2, name: 'N Golo Kanté', cost:40000000, club: 'Chelsea', img:'assets/images/kante.jpg',
+      {id: 2, name: 'N Golo Kanté', cost:40000000, club: 'Chelsea', img:'assets/images/kante.jpg', clip:'https://www.youtube.com/embed/9_O6TSyYAlE',
     info:'N Golo Kanté (born 29 March 1991) is a French professional footballer who plays as a central midfielder for Premier League club Chelsea and the France national team. Kanté is widely praised for his work rate and defensive acumen.'},
       {id: 3, name: 'Messi', cost:50000000, club: 'PSG', img:'assets/images/messi.jpg',
     info: 'Lionel Andrés Messi born 24 June 1987, also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Widely regarded as one of the greatest players of all time, Messi has won a record seven Ballon d Or awards, a record six European Golden Shoes, and in 2020 was named to the Ballon d Or Dream Team. Until leaving the club in 2021.'},

@@ -18,10 +18,10 @@ const PlayersPresentation = () => {
              <Button variant="text" color="primary">
              <Link to={`Detail/${player.id}`}>Detail</Link> 
              </Button>
-    <div className="card-reveal">
+    {/* <div className="card-reveal">
       <span className="card-title grey-text text-darken-4">Card Title<i className="material-icons right">close</i></span>
       <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
+    </div> */}
         </Card>
         
       </Col>

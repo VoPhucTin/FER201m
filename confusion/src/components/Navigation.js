@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import { ThemeContext } from './ThemeContext';
 import { Link } from 'react-router-dom';
 import { Navbar, NavItem, Icon } from 'react-materialize';
-import HomeIcon from '@mui/icons-material/Home';
+
  const Navigation = () => {
   // const { theme, toggle, dark } = useContext(ThemeContext)
   return (
@@ -17,7 +17,7 @@ import HomeIcon from '@mui/icons-material/Home';
         <li><Link to='/'><Icon left>home</Icon>Home</Link></li>
         <li to='/about'><Link to='/about'><Icon left>info_outline</Icon>About</Link></li>
         <li to='/news'><Link to='/news'><Icon left>dvr</Icon>News</Link></li>
-        <li href='/contact'><Link to='/contact'><Icon left>contacts</Icon>Contact</Link></li>
+        <li><Link to='/contact'><Icon left>contacts</Icon>Contact</Link></li>
       </ul>
     </Navbar>
   )
